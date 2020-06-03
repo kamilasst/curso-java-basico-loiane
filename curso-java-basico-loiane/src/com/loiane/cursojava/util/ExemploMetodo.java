@@ -3,7 +3,7 @@ package com.loiane.cursojava.util;
 public class ExemploMetodo {
 
 	public static void main(String[] args) {
-
+		//
 		// TODO atg para kss - Utilizar métodos
 	}
 
