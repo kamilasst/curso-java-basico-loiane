@@ -7,6 +7,7 @@ public class ExemploMetodo {
 		// TODO atg para kss - Utilizar métodos
 	}
 
+//
 	// TODO atg para kss - Exemplo método retornando valor e recebendo parâmetros
 	private static double calcularDesconto(double salarioBruto, int percentualDesconto) {
 		return (salarioBruto / 100) * percentualDesconto;
