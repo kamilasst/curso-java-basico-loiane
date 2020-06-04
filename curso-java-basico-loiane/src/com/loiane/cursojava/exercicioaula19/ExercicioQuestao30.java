@@ -22,6 +22,7 @@ public class ExercicioQuestao30 {
 			System.out.println("Digite o valor da posição " + i);
 			vetorA[i] = scan.nextInt();
 
+			// TODO atg para kss Usar funcao do utils
 			if (vetorA[i] % 2 == 0) {
 				vetorB[posicaoB] = vetorA[i];
 				posicaoB++;

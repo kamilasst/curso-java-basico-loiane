@@ -22,6 +22,7 @@ public class ExercicioQuestao31 {
 
 		for (int i = 0; i < vetorA.length; i++) {
 
+			// TODO atg para kss
 			if (vetorA[i] % 2 == 0) {
 				vetorB[posicaoB] = vetorA[i];
 				posicaoB++;
@@ -30,6 +31,7 @@ public class ExercicioQuestao31 {
 
 		for (int i = 0; i < vetorA.length; i++) {
 
+			// TODO atg para kss
 			if (vetorA[i] % 2 != 0) {
 				vetorB[posicaoB] = vetorA[i];
 				posicaoB++;

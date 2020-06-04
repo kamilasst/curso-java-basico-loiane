@@ -18,6 +18,7 @@ public class Exercicioquestao14 {
 			System.out.println("Insira o valor do vetor na posição " + i);
 			vetorA[i] = scan.nextInt();
 
+			// TODO atg para kss Usar funcao do utils
 			if (vetorA[i] % 2 == 1) {
 
 				soma += vetorA[i];

@@ -18,6 +18,7 @@ public class ExercicioQuestao15 {
 			System.out.println("Insira o valor da posição: " + i);
 			vetorA[i] = scan.nextInt();
 
+			// TODO atg para kss Usar funcao do utils
 			if (vetorA[i] % 2 == 0) {
 				par++;
 			}

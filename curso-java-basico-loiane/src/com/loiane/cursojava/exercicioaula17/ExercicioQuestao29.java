@@ -21,6 +21,7 @@ public class ExercicioQuestao29 {
 
 			for (int j = 2; j < i; j++) {
 
+				// TODO kss Crir função no Utis
 				if (i % j == 0) {
 					primo = false;
 				}

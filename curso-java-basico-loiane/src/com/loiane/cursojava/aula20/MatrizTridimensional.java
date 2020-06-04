@@ -26,6 +26,7 @@ public class MatrizTridimensional {
 
 					soma += matrizTridimensional[i][j][k];
 
+					// TODO atg para kss Usar método do utils
 					if (matrizTridimensional[i][j][k] % 2 == 0) {
 						somaPares += matrizTridimensional[i][j][k];
 

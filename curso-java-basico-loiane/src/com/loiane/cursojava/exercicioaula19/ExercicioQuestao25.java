@@ -21,6 +21,8 @@ public class ExercicioQuestao25 {
 //			Utilizado o operador ternário
 //			? = Significa o If - Se a condição for verdadeira entra nesse " ? " e recebe 1
 //			: = Signica else - Se for falso entra no " : " e recebe 0
+			
+			// TODO atg para kss Usar funcoa do Utils
 			vetorB[i] = (vetorA[i] % 2 == 0) ? 1 : 0;
 
 //			O operador ternário é a mesma coisa do if else, como exemplo abaixo:

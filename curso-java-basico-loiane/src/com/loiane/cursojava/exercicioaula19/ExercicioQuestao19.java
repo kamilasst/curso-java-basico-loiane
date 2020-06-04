@@ -11,6 +11,9 @@ public class ExercicioQuestao19 {
 		scan.useLocale(Locale.US);
 
 		double[] vetorNotas1 = new double[10];
+		
+		// TODO atg para kss Nao é uma boa prática criar o tamanho de um array
+		//o length do outro, melhor vc criar uma constante e usal-la nos 3 casos
 		double[] vetorNotas2 = new double[vetorNotas1.length];
 		double[] vetorResult = new double[vetorNotas1.length];
 

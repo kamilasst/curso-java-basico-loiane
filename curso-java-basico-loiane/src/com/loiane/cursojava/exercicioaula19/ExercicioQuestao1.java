@@ -21,6 +21,7 @@ public class ExercicioQuestao1 {
 			vetorB[i] = vetorA[i];
 		}
 
+		// TODO atg para kss Apagar código comentado
 		// for (int i = 0; i < vetorA.length; i++) {
 		//
 		// vetorB [i] = vetorA [i];

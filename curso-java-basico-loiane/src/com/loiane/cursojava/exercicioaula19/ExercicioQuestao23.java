@@ -17,6 +17,7 @@ public class ExercicioQuestao23 {
 			System.out.println("Digite o valor para a posição " + i);
 			vetorA[i] = scan.nextInt();
 
+			// TODO atg para kss Usar funcao do utils
 			if (vetorA[i] % 2 != 0) {
 				break;
 			}
