@@ -23,8 +23,14 @@ public class ExercicioQuestao30 {
 
 			System.out.println("Digite o valor da posição " + i);
 			vetorA[i] = scan.nextInt();
+<<<<<<< HEAD
 // TODO kss para atg - Corrigir utilização da classe util		
 			if (Util.IsPar(vetorA[i])) {
+=======
+
+			// TODO atg para kss Usar funcao do utils
+			if (vetorA[i] % 2 == 0) {
+>>>>>>> branch 'master' of https://github.com/kamilasst/curso-java-basico-loiane.git
 				vetorB[posicaoB] = vetorA[i];
 				posicaoB++;
 

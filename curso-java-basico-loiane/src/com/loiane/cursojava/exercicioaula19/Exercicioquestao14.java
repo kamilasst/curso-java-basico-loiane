@@ -19,9 +19,11 @@ public class Exercicioquestao14 {
 		for (int i = 0; i < vetorA.length; i++) {
 			System.out.println("Insira o valor do vetor na posição " + i);
 			vetorA[i] = scan.nextInt();
-// TODO kss para atg - Corrigir utilização da classe util
+
+			// TODO kss para atg - Corrigir utilização da classe util
 			if (Util.IsImpar(vetorA[i])) {
 
+				
 				soma += vetorA[i];
 				quantidadeImpares++;
 			}

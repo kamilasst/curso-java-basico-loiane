@@ -36,6 +36,7 @@ public class ExercícioQuestao32 {
 
 			} else {
 
+				/// TODO atg para kss Criar constantes para os códigos dos produtos
 				switch (codigoProduto) {
 				case 100:
 					preco = PRECO_CACHORRO_QUENTE;

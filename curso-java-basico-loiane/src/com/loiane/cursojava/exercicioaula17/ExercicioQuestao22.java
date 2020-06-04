@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class ExercicioQuestao22 {
 
-	private int parei = 0;
-
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
