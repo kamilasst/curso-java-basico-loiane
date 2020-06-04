@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ExercicioQuestao13 {
 
-	// TODO kss - Declarando uma constante
+	// TODO kss - Exemplo Declarando uma constante
 	static final double NUMERO_MASCULINO = 0.0;
 
 	public static void main(String[] args) {

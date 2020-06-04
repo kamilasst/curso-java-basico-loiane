@@ -8,7 +8,7 @@ public class TesteAdler {
 
 	public static void main(String[] args) {
 
-		// TODO kss Exemplo de alteração de locale da aplicação
+		// TODO kss - Exemplo de alteração de locale da aplicação
 		// Locale.setDefault(Locale.ENGLISH);
 
 		// Português já é o default da aplicação

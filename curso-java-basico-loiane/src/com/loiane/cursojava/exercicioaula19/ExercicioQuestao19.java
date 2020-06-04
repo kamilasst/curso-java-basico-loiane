@@ -5,17 +5,19 @@ import java.util.Scanner;
 
 public class ExercicioQuestao19 {
 
+	private static final int TAMANHO_ARRAY = 10;
+
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 		scan.useLocale(Locale.US);
 
-		double[] vetorNotas1 = new double[10];
-		
-		// TODO atg para kss Nao é uma boa prática criar o tamanho de um array
-		//o length do outro, melhor vc criar uma constante e usal-la nos 3 casos
-		double[] vetorNotas2 = new double[vetorNotas1.length];
-		double[] vetorResult = new double[vetorNotas1.length];
+		double[] vetorNotas1 = new double[TAMANHO_ARRAY];
+
+		// TODO kss para atg - Corrigir a constante
+		// o length do outro, melhor vc criar uma constante e usal-la nos 3 casos
+		double[] vetorNotas2 = new double[TAMANHO_ARRAY];
+		double[] vetorResult = new double[TAMANHO_ARRAY];
 
 		for (int i = 0; i < vetorNotas1.length; i++) {
 

@@ -16,10 +16,10 @@ public class ExercicioQuestao3 {
 		String sexo = scan.next();
 
 		/*
-		 * TODO atg para kss - Igualdade de "objetos": Para comparação de igualdade de
-		 * String não utiliza ==. A classe String tem sua propria função para realizar
-		 * comparação. São elas equals e equalsIgnoreCase e será utilizado o
-		 * equalsIgnoreCase pq a letra poderá se maiúscula ou minúscula
+		 * TODO atg para kss - Exemplo de Igualdade de "objetos": Para comparação de
+		 * igualdade de String não utiliza ==. A classe String tem sua propria função
+		 * para realizar comparação. São elas equals e equalsIgnoreCase e será utilizado
+		 * o equalsIgnoreCase pq a letra poderá se maiúscula ou minúscula
 		 */
 		if (sexo.equalsIgnoreCase("f")) {
 			System.out.println("F - Feminino");

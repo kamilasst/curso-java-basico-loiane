@@ -1,5 +1,7 @@
 package com.loiane.cursojava.aula20;
 
+import com.loiane.cursojava.util.Util;
+
 public class MatrizTridimensional {
 
 	public static void main(String[] args) {
@@ -26,8 +28,8 @@ public class MatrizTridimensional {
 
 					soma += matrizTridimensional[i][j][k];
 
-					// TODO atg para kss Usar método do utils
-					if (matrizTridimensional[i][j][k] % 2 == 0) {
+					// TODO kss para atg - Corrigir a utlização do método do utils
+					if (Util.IsPar(matrizTridimensional[i][j][k])) {
 						somaPares += matrizTridimensional[i][j][k];
 
 					} else {

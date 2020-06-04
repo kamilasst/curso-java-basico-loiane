@@ -21,18 +21,13 @@ public class ExercicioQuestao1 {
 			vetorB[i] = vetorA[i];
 		}
 
-		// TODO atg para kss Apagar código comentado
-		// for (int i = 0; i < vetorA.length; i++) {
-		//
-		// vetorB [i] = vetorA [i];
-		// }
-
 		System.out.print("Vetor A = ");
 
 		for (int i = 0; i < vetorA.length; i++) {
 
 			System.out.print(vetorA[i] + " ");
 		}
+
 		System.out.println();
 
 		System.out.print("Vetor B = ");
@@ -41,6 +36,7 @@ public class ExercicioQuestao1 {
 
 			System.out.print(vetorB[i] + " ");
 		}
+
 		scan.close();
 	}
 
