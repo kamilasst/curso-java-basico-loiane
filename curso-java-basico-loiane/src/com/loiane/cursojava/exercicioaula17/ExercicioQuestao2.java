@@ -10,9 +10,10 @@ public class ExercicioQuestao2 {
 		Scanner scan = new Scanner(System.in);
 		scan.useLocale(Locale.US);
 
-		boolean informacoesValidas = false;
 		String nomeUsuario;
 		String senha;
+
+		boolean informacoesValidas;
 
 		do {
 
@@ -22,18 +23,28 @@ public class ExercicioQuestao2 {
 			System.out.println("Digite sua senha: ");
 			senha = scan.next();
 
-			// TODO atg pra kss: Fazer método
-			if (nomeUsuario.equalsIgnoreCase(senha)) {
-				informacoesValidas = false;
-				System.out.println("Senha igual ao usuário. Digite novamente!");
+			// TODO kss pra atg: Corrigir método
 
-			} else {
-				informacoesValidas = true;
-				System.out.println("Senha e usuário válidos! ");
-			}
+			informacoesValidas = validarNomeSenha(nomeUsuario, senha);
 
 		} while (!informacoesValidas);
 
 		scan.close();
+	}
+
+	private static boolean validarNomeSenha(String nomeUsurio, String senha) {
+
+		boolean informacoesValidas = false;
+
+		if (nomeUsurio.equalsIgnoreCase(senha)) {
+			informacoesValidas = false;
+			System.out.println("Senha igual ao usuário. Digite novamente!");
+
+		} else {
+			informacoesValidas = true;
+			System.out.println("Senha e usuário válidos! ");
+		}
+
+		return informacoesValidas;
 	}
 }

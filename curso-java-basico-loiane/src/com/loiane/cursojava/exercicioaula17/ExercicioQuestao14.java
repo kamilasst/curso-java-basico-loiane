@@ -3,6 +3,8 @@ package com.loiane.cursojava.exercicioaula17;
 import java.util.Locale;
 import java.util.Scanner;
 
+import com.loiane.cursojava.util.Util;
+
 public class ExercicioQuestao14 {
 
 	public static void main(String[] args) {
@@ -18,7 +20,9 @@ public class ExercicioQuestao14 {
 			System.out.println("Insira um número: ");
 			int numero = scan.nextInt();
 
-			if (numero % 2 == 0) {
+			// TODO kss para atg - Corrigir a Utilização do util.Ispar (criado por kss)
+
+			if (Util.IsPar(numero)) {
 				numerosPares++;
 
 			} else {

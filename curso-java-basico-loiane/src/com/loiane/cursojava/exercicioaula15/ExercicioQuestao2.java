@@ -15,6 +15,7 @@ public class ExercicioQuestao2 {
 
 		if (numero >= 0) {
 			System.out.println("O número informado é positivo: " + numero);
+
 		} else {
 			System.out.println("O número informado é negativo: " + numero);
 		}

@@ -7,92 +7,95 @@ public class ExercicioQuestao5 {
 
 	public static void main(String[] args) {
 
+		// TODO kss pata atg - Corrigir métodos
+
 		Scanner scan = new Scanner(System.in);
 		scan.useLocale(Locale.US);
 
-		double paisA;
-		double paisB;
-		double contador = 0;
-		double taxaPaisA;
-		double taxaPaisB;
+		String paisA = "A";
+		String paisB = "B";
 
-		boolean valido = false;
+		double populacaoA = obterPopulacao(scan);
+		double populacaoB = obterPopulacao(scan);
+		double taxaA = obterTaxaCrescimento(scan);
+		double taxaB = obterTaxaCrescimento(scan);
 
-		// TODO atg para kss: Criar método
-		do {
+		int contador = 0;
 
-			System.out.println("Digite a população do País A:");
-			paisA = scan.nextDouble();
+		while (populacaoA < populacaoB) {
 
-			if (paisA > 0) {
-				valido = true;
-
-			} else {
-				System.out.println("A população do país A precisa ser maior que 0 (zero)");
-			}
-
-		} while (!valido);
-
-		valido = false;
-
-		do {
-
-			System.out.println("Digite a população do País B:");
-			paisB = scan.nextDouble();
-
-			if (paisB > 0) {
-				valido = true;
-
-			} else {
-				System.out.println("A população do país B precisa ser maior que 0 (zero)");
-			}
-
-		} while (!valido);
-
-		valido = false;
-
-		do {
-
-			System.out.println("Digite a taxa de crescimento da população do País A:");
-			taxaPaisA = scan.nextDouble();
-
-			if (taxaPaisA > 0) {
-				valido = true;
-
-			} else {
-				System.out.println("A taxa da população do país A precisa ser maior que 0 (zero)");
-			}
-
-		} while (!valido);
-
-		valido = false;
-
-		do {
-
-			System.out.println("Digite a taxa de crescimento da população do País B:");
-			taxaPaisB = scan.nextDouble();
-
-			if (taxaPaisB > 0) {
-				valido = true;
-
-			} else {
-				System.out.println("A taxa da população do país B precisa ser maior que 0 (zero)");
-			}
-
-		} while (!valido);
-
-		while (paisA < paisB) {
-
-			paisA += (paisA / 100) * taxaPaisA;
-			paisB += (paisB / 100) * taxaPaisB;
+			populacaoA += calculo(populacaoA, taxaA);
+			populacaoB += calculo(populacaoB, taxaB);
 			contador++;
 
 		}
-		System.out.println("Pais A tem população de: " + paisA);
-		System.out.println("Pais B tem população de: " + paisB);
-		System.out.println("Quantidade de anos " + contador);
 
-		scan.close();
+		imprimirPopulacao(paisA, populacaoA);
+		imprimirPopulacao(paisB, populacaoB);
+		imprimirQuantidadeAnos(contador);
+
+	}
+
+	private static double obterPopulacao(Scanner scan) {
+
+		boolean valido = false;
+		double populacao;
+
+		do {
+
+			System.out.println("Entre com a população:");
+			populacao = scan.nextInt();
+
+			if (populacao > 0) {
+				valido = true;
+			} else {
+				System.out.println("População precisa ser maior que 0.");
+			}
+
+		} while (!valido);
+
+		return populacao;
+	}
+
+	private static double obterTaxaCrescimento(Scanner scan) {
+
+		boolean valido = false;
+		double taxa;
+
+		do {
+
+			System.out.println("Entre com a taxa de crescimento da população :");
+			taxa = scan.nextDouble();
+
+			if (taxa > 0) {
+				valido = true;
+			} else {
+				System.out.println("Taxa de crescimento precisa ser maior que 0.");
+			}
+
+		} while (!valido);
+
+		return taxa;
+	}
+
+	private static double calculo(double populacao, double taxa) {
+
+		double resultado = (populacao / 100) * taxa;
+
+		return resultado;
+
+	}
+
+	private static void imprimirPopulacao(String pais, double populacao) {
+
+		System.out.println("Pais " + pais + " tem população de : " + populacao);
+
+	}
+
+	private static void imprimirQuantidadeAnos(double quantAnos) {
+
+		System.out.println("Quantidade de anos " + quantAnos);
+
 	}
 
 }

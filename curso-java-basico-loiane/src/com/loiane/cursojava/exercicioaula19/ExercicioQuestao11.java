@@ -3,6 +3,8 @@ package com.loiane.cursojava.exercicioaula19;
 import java.util.Locale;
 import java.util.Scanner;
 
+import com.loiane.cursojava.util.Util;
+
 public class ExercicioQuestao11 {
 
 	public static void main(String[] args) {
@@ -20,9 +22,11 @@ public class ExercicioQuestao11 {
 
 		int quantidadePares = 0;
 
+		// TODO kss para atg - Corrigir utilização da classe util
 		for (int i = 0; i < vetorA.length; i++) {
 
-			if (vetorA[i] % 2 == 0) {
+			int valor = vetorA[i];
+			if (Util.IsPar(valor)) {
 
 				quantidadePares++;
 			}

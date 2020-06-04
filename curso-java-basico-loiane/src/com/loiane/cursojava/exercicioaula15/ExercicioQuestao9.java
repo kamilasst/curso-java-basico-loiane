@@ -7,28 +7,57 @@ public class ExercicioQuestao9 {
 
 	public static void main(String[] args) {
 
+		// TODO kss para atg - Corrigir exercício
 		Scanner scan = new Scanner(System.in);
 		scan.useLocale(Locale.US);
 
-		int maior = 0;
-		int menor = 0;
+		System.out.println("Entre com primeiro número:");
+		int num1 = scan.nextInt();
 
-		// TODO fazer vetor nesse exercicio
+		System.out.println("Entre com segundo número:");
+		int num2 = scan.nextInt();
 
-		for (int contador = 1; contador <= 3; contador++) {
+		System.out.println("Entre com terceiro número:");
+		int num3 = scan.nextInt();
 
-			System.out.println("Informe o " + contador + " valor:");
-			int numero = scan.nextInt();
+		if (num1 <= num2 && num1 <= num3 && num2 <= num3) {
+			// num1 é menor
+			// num3 é maior
+			// num1 < num2 < num3
+			System.out.println(num3 + " - " + num2 + " - " + num1);
 
-			if (maior < numero || contador == 1) {
-				// maior = numero
-			}
-			if (menor > numero || contador == 1) {
-				// menor = numero
-			}
+		} else if (num1 <= num2 && num1 <= num3 && num3 <= num2) {
+			// num1 é menor
+			// num2 é maior
+			// num1 < num3 < num2
+			System.out.println(num2 + " - " + num3 + " - " + num1);
+
+		} else if (num2 <= num1 && num2 <= num3 && num1 <= num3) {
+			// num2 é menor
+			// num3 é maior
+			// num2 < num1 < num3
+			System.out.println(num3 + " - " + num1 + " - " + num2);
+
+		} else if (num2 <= num1 && num2 <= num3 && num3 <= num1) {
+			// num2 é menor
+			// num1 é maior
+			// num2 < num3 < num1
+			System.out.println(num1 + " - " + num3 + " - " + num2);
+
+		} else if (num3 <= num1 && num3 <= num2 && num1 <= num2) {
+			// num3 é menor
+			// num2 é maior
+			// num3 < num1 < num2
+			System.out.println(num2 + " - " + num1 + " - " + num3);
+
+		} else if (num3 <= num1 && num3 <= num2 && num2 <= num1) {
+			// num3 é menor
+			// num1 é maior
+			// num3 < num2 < num1
+			System.out.println(num1 + " - " + num2 + " - " + num3);
 
 		}
+
 		scan.close();
 	}
-
 }

@@ -4,7 +4,7 @@ public class ExemploMetodo {
 
 	public static void main(String[] args) {
 		//
-		// TODO atg para kss - Utilizar métodos
+		// TODO atg para kss - Exemplos de como Utilizar métodos
 	}
 
 //

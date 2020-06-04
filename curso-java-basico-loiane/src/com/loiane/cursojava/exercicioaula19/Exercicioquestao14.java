@@ -3,6 +3,8 @@ package com.loiane.cursojava.exercicioaula19;
 import java.util.Locale;
 import java.util.Scanner;
 
+import com.loiane.cursojava.util.Util;
+
 public class Exercicioquestao14 {
 
 	public static void main(String[] args) {
@@ -17,8 +19,8 @@ public class Exercicioquestao14 {
 		for (int i = 0; i < vetorA.length; i++) {
 			System.out.println("Insira o valor do vetor na posição " + i);
 			vetorA[i] = scan.nextInt();
-
-			if (vetorA[i] % 2 == 1) {
+// TODO kss para atg - Corrigir utilização da classe util
+			if (Util.IsImpar(vetorA[i])) {
 
 				soma += vetorA[i];
 				quantidadeImpares++;

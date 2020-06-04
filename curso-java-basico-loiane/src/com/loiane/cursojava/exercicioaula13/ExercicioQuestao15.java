@@ -12,7 +12,7 @@ public class ExercicioQuestao15 {
 		Scanner scan = new Scanner(System.in);
 		scan.useLocale(Locale.US);
 
-		// TODO atg para kss - Poderia ser funções/métodos
+		// TODO kss para atg - Corrigir métodos
 
 		System.out.println("Quanto você ganha em reais por hora: ");
 		double valorPorHora = scan.nextDouble();

@@ -3,6 +3,8 @@ package com.loiane.cursojava.exercicioaula19;
 import java.util.Locale;
 import java.util.Scanner;
 
+import com.loiane.cursojava.util.Util;
+
 public class ExercicioQuestao23 {
 
 	public static void main(String[] args) {
@@ -16,8 +18,8 @@ public class ExercicioQuestao23 {
 
 			System.out.println("Digite o valor para a posição " + i);
 			vetorA[i] = scan.nextInt();
-
-			if (vetorA[i] % 2 != 0) {
+// TODO kss para atg - Corrigir utilização da classe util
+			if (Util.IsImpar(vetorA[i])) {
 				break;
 			}
 		}

@@ -3,6 +3,8 @@ package com.loiane.cursojava.exercicioaula19;
 import java.util.Locale;
 import java.util.Scanner;
 
+import com.loiane.cursojava.util.Util;
+
 public class ExercicioQuestao34 {
 
 	public static void main(String[] args) {
@@ -22,7 +24,8 @@ public class ExercicioQuestao34 {
 			System.out.println("Analisando o número " + vetorA[i]);
 
 			for (int j = 2; j <= vetorA[i]; j++) {
-				if (j % 2 == 0) {
+// TODO kss para atg - Corrigir utilização da classe util
+				if (Util.IsPar(j)) {
 					System.out.println(j + "- É par!");
 				}
 			}

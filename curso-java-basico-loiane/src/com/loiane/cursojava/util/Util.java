@@ -8,4 +8,9 @@ public class Util {
 	public static boolean IsImpar(int valor) {
 		return valor % 2 != 0;
 	}
+
+	public static boolean IsPar(int valor) {
+		return valor % 2 == 0;
+	}
+
 }
