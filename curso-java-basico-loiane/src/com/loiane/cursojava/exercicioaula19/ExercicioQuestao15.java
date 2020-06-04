@@ -19,14 +19,9 @@ public class ExercicioQuestao15 {
 
 			System.out.println("Insira o valor da posição: " + i);
 			vetorA[i] = scan.nextInt();
-<<<<<<< HEAD
+
 // TODO kss para atg - Corrigir utilização da classe util
 			if (Util.IsPar(vetorA[i])) {
-=======
-
-			// TODO atg para kss Usar funcao do utils
-			if (vetorA[i] % 2 == 0) {
->>>>>>> branch 'master' of https://github.com/kamilasst/curso-java-basico-loiane.git
 				par++;
 			}
 		}

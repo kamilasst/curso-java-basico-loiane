@@ -23,28 +23,14 @@ public class ExercicioQuestao31 {
 		int posicaoB = 0;
 
 		for (int i = 0; i < vetorA.length; i++) {
-<<<<<<< HEAD
-// TODO kss para atg - Corrigir utilização da classe util	
 			if (Util.IsPar(vetorA[i])) {
-=======
-
-			// TODO atg para kss
-			if (vetorA[i] % 2 == 0) {
->>>>>>> branch 'master' of https://github.com/kamilasst/curso-java-basico-loiane.git
 				vetorB[posicaoB] = vetorA[i];
 				posicaoB++;
 			}
 		}
 
 		for (int i = 0; i < vetorA.length; i++) {
-<<<<<<< HEAD
-// TODO kss para atg - Corrigir utilização da classe util	
 			if (Util.IsImpar(vetorA[i])) {
-=======
-
-			// TODO atg para kss
-			if (vetorA[i] % 2 != 0) {
->>>>>>> branch 'master' of https://github.com/kamilasst/curso-java-basico-loiane.git
 				vetorB[posicaoB] = vetorA[i];
 				posicaoB++;
 			}
